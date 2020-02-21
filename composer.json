@@ -1,0 +1,32 @@
+{
+  "name": "hypernode/hypernodeshopware6helpers",
+  "description": "Helpers for shopware6",
+  "version": "v1.0.0",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Hypernode",
+      "role": "Manufacturer"
+    }
+  ],
+  "require": {
+    "shopware/core": "6.1.*"
+  },
+  "extra": {
+    "shopware-plugin-class": "Hypernode\\HypernodeShopware6Helpers\\HypernodeShopware6Helpers",
+    "label": {
+      "de-DE": "Will be added later",
+      "en-GB": "Hypernode shopware6 helpers"
+    },
+    "description": {
+      "de-DE": "Will be added later",
+      "en-GB": "Hyperrnode shopware6 helpers"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Hypernode\\HypernodeShopware6Helpers\\": "src/"
+    }
+  }
+}
