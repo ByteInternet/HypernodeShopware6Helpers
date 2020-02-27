@@ -18,3 +18,7 @@ The commands listed under hypernode are the commands that come with this plugin.
 ## What does this plugin contain
 At the moment the plugin contains:
 + Skipwizard command - Use this command to skip the wizard that asks you for demo data and other plugins.
+
+## Hypernode deployment
+Tag a release, mirror the release tarball on mirror.hypernode.io, and update the URL
+in the ansible preinstall playbook.
