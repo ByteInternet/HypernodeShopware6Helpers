@@ -1,7 +1,7 @@
 {
   "name": "hypernode/hypernodeshopware6helpers",
   "description": "Helpers for shopware6",
-  "version": "v1.0.1",
+  "version": "v1.0.2",
   "type": "shopware-platform-plugin",
   "license": "MIT",
   "authors": [

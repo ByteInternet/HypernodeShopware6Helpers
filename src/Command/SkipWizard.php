@@ -35,5 +35,6 @@ class SkipWizard extends Command
         ];
         $databag = new QueryDataBag($databagVariables);
         $this->firstRunWizardController->frwFinish($databag, $context);
+        return 0;
     }
 }
