@@ -1,23 +1,22 @@
-<?php declare(strict_types = 1);
+<?php
+
+declare(strict_types = 1);
 
 namespace Hypernode\HypernodeShopware6Helpers\Command;
 
-use Symfony\Component\Console\Command\Command;
-use Symfony\Component\Console\Input\InputInterface;
 use Shopware\Core\Framework\Context;
-use Symfony\Component\Console\Output\OutputInterface;
 use Shopware\Core\Framework\Store\Api\FirstRunWizardController;
 use Shopware\Core\Framework\Validation\DataBag\QueryDataBag;
+use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
 
 class SkipWizard extends Command
 {
-    private $firstRunWizardController;
-
     public function __construct(
-        FirstRunWizardController $firstRunWizardController
+        private FirstRunWizardController $firstRunWizardController
     ) {
         parent::__construct();
-        $this->firstRunWizardController = $firstRunWizardController;
     }
 
     protected function configure(): void
@@ -25,7 +24,7 @@ class SkipWizard extends Command
         $this->setName('hypernode:skipwizard');
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $context = Context::createDefaultContext();
         $this->firstRunWizardController->frwStart($context);
